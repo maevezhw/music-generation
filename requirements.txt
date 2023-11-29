@@ -1,0 +1,9 @@
+music21
+pyfluidsynth
+midi2audio
+IPython
+numpy
+pandas
+tensorflow
+keras
+fractions
