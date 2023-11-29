@@ -13,8 +13,8 @@ import subprocess
 
 def generate_music(input_path, output_name):
   def train_learning():
-    notes_path = '/content/gdrive/Shareddrives/DeepLearning/notes_train.txt'
-    durations_path = '/content/gdrive/Shareddrives/DeepLearning/durations_train.txt'
+    notes_path = 'notes_train.txt'
+    durations_path = 'durations_train.txt'
 
     notes_train = []
     durations_train = []
@@ -157,7 +157,7 @@ def generate_music(input_path, output_name):
 
   def predict(input_path):
     network_input_test, network_output_test = make_input(input_path)
-    model_path = '/content/gdrive/Shareddrives/DeepLearning/firstmodel-200-3.7663-bigger.h5'
+    model_path = 'firstmodel-200-3.7663-bigger.h5'
     model = load_model(model_path)
 
     prediction = model.predict(network_input_test, verbose = 0)
